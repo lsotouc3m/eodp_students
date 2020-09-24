@@ -64,6 +64,7 @@ class l1b(initL1b):
 
         # Equalisation
         # TODO
+        toa_out = toa
 
         return toa_out
 
