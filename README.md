@@ -1,1 +1,2 @@
-# eodp_students
+# eodp
+EODP main repository
