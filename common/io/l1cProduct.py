@@ -3,7 +3,7 @@ from netCDF4 import Dataset
 import numpy as np
 import os
 import sys
-from common.io.outputdir import mkdirOutputdir
+from common.io.mkdirOutputdir import mkdirOutputdir
 
 def writeL1c(outputdir, name, lat, lon, toa):
 

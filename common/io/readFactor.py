@@ -3,7 +3,7 @@ from netCDF4 import Dataset
 import numpy as np
 import sys
 import os
-from common.io.outputdir import mkdirOutputdir
+from common.io.mkdirOutputdir import mkdirOutputdir
 
 EQ_MULT = "equalization_multiplicative_factor"
 EQ_ADD = "equalization_additive_factor"

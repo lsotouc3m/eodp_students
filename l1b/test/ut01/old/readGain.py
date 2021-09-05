@@ -3,7 +3,7 @@ from netCDF4 import Dataset
 import numpy as np
 import sys
 import os
-from common.io.outputdir import mkdirOutputdir
+from common.io.mkdirOutputdir import mkdirOutputdir
 
 def readGain(ncfile):
 
