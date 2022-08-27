@@ -63,7 +63,7 @@ class l1b(initL1b):
         :return: TOA in DN, equalized
         """
         #TODO
-        return toa_out
+        return toa
 
     def restoration(self,toa,gain):
         """
@@ -77,5 +77,3 @@ class l1b(initL1b):
 
         return toa
 
-    def plotL1bToa(self, toa_l1b, outputdir, band):
-        #TODO
