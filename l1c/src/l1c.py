@@ -78,7 +78,7 @@ class l1c(initL1c):
         '''
         #TODO
 
-   def plotL1cToa(self,lat_l1c,lon_l1c, toa_l1c, band):
+    def plotL1cToa(self,lat_l1c,lon_l1c, toa_l1c, band):
         jet = cm.get_cmap('jet', len(lat_l1c))
         toa_l1c[np.argwhere(toa_l1c<0)] = 0
         max_toa = np.max(toa_l1c)
