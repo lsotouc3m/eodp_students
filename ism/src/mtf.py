@@ -10,6 +10,7 @@ from common.plot.plotMat2D import plotMat2D
 from scipy.interpolate import interp2d
 from numpy.fft import fftshift, ifft2
 import os
+from common.io.readMat import writeMat
 
 class mtf:
     """
@@ -69,11 +70,21 @@ class mtf:
 
         # Calculate the System MTF
         self.logger.debug("Calculation of the Sysmtem MTF by multiplying the different contributors")
-        Hsys = [] #TODO
+        Hsys = np.zeros((100,150)) # dummy #TODO
 
         # Plot cuts ACT/ALT of the MTF
         self.plotMtf(Hdiff, Hdefoc, Hwfe, Hdet, Hsmear, Hmotion, Hsys, nlines, ncolumns, fnAct, fnAlt, directory, band)
 
+        # Save frequencies and MTFs
+        writeMat(self.outdir, "fn2D_" + band, fn2D)
+        writeMat(self.outdir, "fr2D_" + band, fr2D)
+        writeMat(self.outdir, "Hdiff_" + band, Hdiff)
+        writeMat(self.outdir, "Hdefoc_" + band, Hdefoc)
+        writeMat(self.outdir, "Hwfe_" + band, Hwfe)
+        writeMat(self.outdir, "Hdet_" + band, Hdet)
+        writeMat(self.outdir, "Hsmear_" + band, Hsmear)
+        writeMat(self.outdir, "Hmotion_" + band, Hmotion)
+        writeMat(self.outdir, "Hsys_" + band, Hsys)
 
         return Hsys
 

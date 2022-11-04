@@ -117,7 +117,7 @@ class opticalPhase(initIsm):
         """
         # wv in [um]
         isrf, wv_isrf = readIsrf(self.auxdir+'/'+self.ismConfig.isrffile, band)
-        
+
         # TODO
         toa = np.zeros((100,150)) # dummy
         return toa
