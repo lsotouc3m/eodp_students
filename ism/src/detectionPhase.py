@@ -105,7 +105,7 @@ class detectionPhase(initIsm):
         :return: Toa in photons
         """
         #TODO
-        return toa_ph
+        return toa
 
     def phot2Electr(self, toa, QE):
         """
@@ -115,9 +115,9 @@ class detectionPhase(initIsm):
         :return: toa in electrons
         """
         #TODO
-        return toae
+        return toa
 
-    def badDeadPixels(self, toa,bad_pix,dead_pix,bad_pix_red,dead_pix_red):
+    def badDeadPixels(self, toa, bad_pix, dead_pix, bad_pix_red, dead_pix_red):
         """
         Bad and dead pixels simulation
         :param toa: input toa in [e-]

@@ -69,7 +69,7 @@ class mtf:
 
         # Calculate the System MTF
         self.logger.debug("Calculation of the Sysmtem MTF by multiplying the different contributors")
-        Hsys = #TODO
+        Hsys = [] #TODO
 
         # Plot cuts ACT/ALT of the MTF
         self.plotMtf(Hdiff, Hdefoc, Hwfe, Hdet, Hsmear, Hmotion, Hsys, nlines, ncolumns, fnAct, fnAlt, directory, band)
@@ -92,6 +92,10 @@ class mtf:
         :return fnAlt: 1D normalised frequencies 2D ALT (f/(1/w))
         """
         #TODO
+        fn2D = np.zeros((100,150)) # dummy
+        fr2D = np.zeros((100,150)) # dummy
+        fnAct = np.zeros(150) # dummy
+        fnAlt = np.zeros(100) # dummy
         return fn2D, fr2D, fnAct, fnAlt
 
     def mtfDiffract(self,fr2D):
@@ -101,6 +105,7 @@ class mtf:
         :return: diffraction MTF
         """
         #TODO
+        Hdiff = np.zeros((100,150)) # dummy
         return Hdiff
 
 
@@ -114,6 +119,7 @@ class mtf:
         :return: Defocus MTF
         """
         #TODO
+        Hdefoc = np.zeros((100,150)) # dummy
         return Hdefoc
 
     def mtfWfeAberrations(self, fr2D, lambd, kLF, wLF, kHF, wHF):
@@ -128,6 +134,7 @@ class mtf:
         :return: WFE Aberrations MTF
         """
         #TODO
+        Hwfe = np.zeros((100,150)) # dummy
         return Hwfe
 
     def mtfDetector(self,fn2D):
@@ -137,6 +144,7 @@ class mtf:
         :return: detector MTF
         """
         #TODO
+        Hdet = np.zeros((100,150)) # dummy
         return Hdet
 
     def mtfSmearing(self, fnAlt, ncolumns, ksmear):
@@ -148,6 +156,7 @@ class mtf:
         :return: Smearing MTF
         """
         #TODO
+        Hsmear = np.zeros((100,150)) # dummy
         return Hsmear
 
     def mtfMotion(self, fn2D, kmotion):
@@ -158,6 +167,7 @@ class mtf:
         :return: detector MTF
         """
         #TODO
+        Hmotion = np.zeros((100,150)) # dummy
         return Hmotion
 
     def plotMtf(self,Hdiff, Hdefoc, Hwfe, Hdet, Hsmear, Hmotion, Hsys, nlines, ncolumns, fnAct, fnAlt, directory, band):
@@ -179,5 +189,6 @@ class mtf:
         :return: N/A
         """
         #TODO
+        a=1 # dummy
 
 

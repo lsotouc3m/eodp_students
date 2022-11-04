@@ -104,6 +104,7 @@ class opticalPhase(initIsm):
         :return: TOA image in irradiances [mW/m2]
         """
         # TODO
+        toa_ft = np.zeros((100,150)) # dummy
         return toa_ft
 
     def spectralIntegration(self, sgm_toa, sgm_wv, band):
@@ -115,6 +116,7 @@ class opticalPhase(initIsm):
         :return: TOA image 2D in radiances [mW/m2]
         """
         # TODO
+        toa = np.zeros((100,150)) # dummy
         return toa
 
 
